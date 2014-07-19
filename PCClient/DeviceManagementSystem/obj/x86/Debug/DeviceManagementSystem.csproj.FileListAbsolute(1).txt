@@ -1,0 +1,28 @@
+D:\Program Files\Microsoft Visual Studio 10.0\unfinished projects\DeviceManagementSystem\bin\Debug\DeviceManagementSystem.exe.config
+C:\Users\Safe\Desktop\Fuck-Project\Fucking\DeviceManagementSystem\bin\Debug\DeviceManagementSystem.exe.config
+C:\Users\Safe\Desktop\Fuck-Project\Fucking\DeviceManagementSystem\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Safe\Desktop\Fuck-Project\Fucking\DeviceManagementSystem\obj\x86\Debug\DeviceManagementSystem.Form1.resources
+C:\Users\Safe\Desktop\Fuck-Project\Fucking\DeviceManagementSystem\obj\x86\Debug\DeviceManagementSystem.Properties.Resources.resources
+C:\Users\Safe\Desktop\Fuck-Project\Fucking\DeviceManagementSystem\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Safe\Desktop\Fuck-Project\Fucking\DeviceManagementSystem\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Safe\Desktop\Fuck-Project\Fucking\DeviceManagementSystem\bin\Debug\DeviceManagementSystem.XML
+C:\Users\Safe\Desktop\Fuck-Project\Fucking\DeviceManagementSystem\bin\Debug\DeviceManagementSystem.exe
+C:\Users\Safe\Desktop\Fuck-Project\Fucking\DeviceManagementSystem\bin\Debug\DeviceManagementSystem.pdb
+C:\Users\Safe\Desktop\Fuck-Project\Fucking\DeviceManagementSystem\obj\x86\Debug\DeviceManagementSystem.exe
+C:\Users\Safe\Desktop\Fuck-Project\Fucking\DeviceManagementSystem\obj\x86\Debug\DeviceManagementSystem.pdb
+C:\Users\Safe\Desktop\Fuck-Project\Fucking\DeviceManagementSystem\obj\x86\Debug\DeviceManagementSystem.Adder1.resources
+C:\Users\Safe\Desktop\Fuck-Project\Fucking - 副本\DeviceManagementSystem\bin\Debug\DeviceManagementSystem.exe.config
+C:\Users\Safe\Desktop\Fuck-Project\Fucking - 副本\DeviceManagementSystem\bin\Debug\DeviceManagementSystem.XML
+C:\Users\Safe\Desktop\Fuck-Project\Fucking - 副本\DeviceManagementSystem\obj\x86\Debug\DeviceManagementSystem.exe
+C:\Users\Safe\Desktop\Fuck-Project\Fucking - 副本\DeviceManagementSystem\obj\x86\Debug\DeviceManagementSystem.pdb
+C:\Users\Safe\Desktop\Fuck-Project\Fucking - 副本\DeviceManagementSystem\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Safe\Desktop\Fuck-Project\Fucking - 副本\DeviceManagementSystem\obj\x86\Debug\DeviceManagementSystem.Adder1.resources
+C:\Users\Safe\Desktop\Fuck-Project\Fucking - 副本\DeviceManagementSystem\obj\x86\Debug\DeviceManagementSystem.Form1.resources
+C:\Users\Safe\Desktop\Fuck-Project\Fucking - 副本\DeviceManagementSystem\obj\x86\Debug\DeviceManagementSystem.Properties.Resources.resources
+C:\Users\Safe\Desktop\Fuck-Project\Fucking - 副本\DeviceManagementSystem\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Safe\Desktop\Fuck-Project\Fucking - 副本\DeviceManagementSystem\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Safe\Desktop\Fuck-Project\Fucking - 副本\DeviceManagementSystem\bin\Debug\DeviceManagementSystem.exe
+C:\Users\Safe\Desktop\Fuck-Project\Fucking - 副本\DeviceManagementSystem\bin\Debug\DeviceManagementSystem.pdb
+C:\Users\Safe\Desktop\Fuck-Project\Fucking\DeviceManagementSystem\obj\x86\Debug\DeviceManagementSystem.Searcher.resources
+C:\Users\Safe\Desktop\Fuck-Project\Fucking\DeviceManagementSystem\obj\x86\Debug\DeviceManagementSystem.csproj.ResolveComReference.cache
+C:\Users\Safe\Desktop\Fuck-Project\Fucking\DeviceManagementSystem\obj\x86\Debug\DeviceManagementSystem.Adder2.resources

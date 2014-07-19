@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DeviceManagementSystem</name>
+    </assembly>
+    <members>
+        <member name="T:DeviceManagementSystem.Searcher">
+            <summary>
+            模糊查询对话框
+            </summary>
+        </member>
+        <member name="F:DeviceManagementSystem.Searcher.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DeviceManagementSystem.Searcher.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DeviceManagementSystem.Searcher.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DeviceManagementSystem.Form1">
+            <summary>
+            主窗体的说
+            </summary>
+        </member>
+        <member name="F:DeviceManagementSystem.Form1.bm1">
+            <summary>
+            两个表的名称
+            </summary>
+        </member>
+        <member name="F:DeviceManagementSystem.Form1.bm2">
+            <summary>
+            两个表的名称
+            </summary>
+        </member>
+        <member name="F:DeviceManagementSystem.Form1.bm3">
+            <summary>
+            两个表的名称
+            </summary>
+        </member>
+        <member name="F:DeviceManagementSystem.Form1.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:DeviceManagementSystem.Form1.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:DeviceManagementSystem.Form1.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:DeviceManagementSystem.Form1.headtxtlist">
+            <summary>
+            保存列标题的对应
+            </summary>
+        </member>
+        <member name="M:DeviceManagementSystem.Form1.#ctor">
+            <summary>
+            主窗口的构造函数
+            </summary>
+            <history>
+            01-zsw
+            </history>
+        </member>
+        <member name="M:DeviceManagementSystem.Form1.app_Load">
+            <summary>
+            程序的初始化工作
+            </summary>
+            <history>
+            04-zsw
+            </history>
+        </member>
+        <member name="M:DeviceManagementSystem.Form1.Form1_Load(System.Object,System.EventArgs)">
+            <summary>
+            主窗口初始化函数
+            </summary>
+            <history>
+            01-zsw
+            </history>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DeviceManagementSystem.Form1.D_Load">
+             <summary>
+            dataset加载数据库
+             </summary>
+             <history>
+             01-zsw
+             </history>
+             <returns>bool D_Load ->加载是否成功</returns>
+        </member>
+        <member name="M:DeviceManagementSystem.Form1.D_Print(System.String)">
+            <summary>
+            从屏幕输出ds中的数据
+            </summary>
+            <history>
+            01-zsw
+            </history>
+            <param name="table">string table -> 表的名称</param>
+        </member>
+        <member name="T:DeviceManagementSystem.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:DeviceManagementSystem.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:DeviceManagementSystem.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="T:DeviceManagementSystem.headtxt">
+            <summary>
+            用于标题名称映射的结构体
+            </summary>
+        </member>
+        <member name="F:DeviceManagementSystem.headtxt.p">
+            <summary>
+            p是原名称,n是目标名称
+            </summary>
+        </member>
+        <member name="F:DeviceManagementSystem.headtxt.n">
+            <summary>
+            p是原名称,n是目标名称
+            </summary>
+        </member>
+        <member name="F:DeviceManagementSystem.Program.global_Directory">
+            <summary>
+            应用程序的主入口点。
+            </summary>
+        </member>
+        <member name="F:DeviceManagementSystem.Adder2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DeviceManagementSystem.Adder2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DeviceManagementSystem.Adder2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DeviceManagementSystem.Adder1">
+            <summary>
+            向设备信息表中添加记录的窗口
+            </summary>
+        </member>
+        <member name="M:DeviceManagementSystem.Adder1.#ctor(System.Data.DataSet)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DeviceManagementSystem.Adder1.D_add(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            向设备信息中添加记录
+            </summary>
+            <param name="fenleihao"></param>
+            <param name="mingcheng"></param>
+            <param name="xinghao"></param>
+            <param name="guige"></param>
+            <param name="danjia"></param>
+            <param name="changjia"></param>
+            <param name="chuchangriqi"></param>
+            <param name="chuchanghao"></param>
+            <param name="gouzhiriqi"></param>
+            <param name="jingfeikemu"></param>
+            <param name="shiyongfangxiang"></param>
+            <param name="jingshouren"></param>
+            <param name="lingyongren"></param>
+            <param name="zichanleibie"></param>
+            <param name="rukushijian"></param>
+            <param name="xianzhuang"></param>
+            <param name="beizhu"></param>
+        </member>
+        <member name="F:DeviceManagementSystem.Adder1.components">
+            <summary>
+            设计器变量
+            </summary>
+        </member>
+        <member name="M:DeviceManagementSystem.Adder1.Dispose(System.Boolean)">
+            <summary>
+            清楚资源
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:DeviceManagementSystem.Adder1.InitializeComponent">
+            <summary>
+            设计器生成的代码
+            </summary>
+        </member>
+        <member name="T:DeviceManagementSystem.Mytools">
+            <summary>
+            工具函数
+            </summary>
+            <remarks>
+            使用全局变量：global_Directory
+            </remarks>
+        </member>
+        <member name="M:DeviceManagementSystem.Mytools.WritePrivateProfileString(System.String,System.String,System.String,System.String)">
+            <summary>
+            写入INI文件
+            </summary>
+            <param name="section">节点名称[如[TypeName]]</param>
+            <param name="key">键</param>
+            <param name="val">值</param>
+            <param name="filepath">文件路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:DeviceManagementSystem.Mytools.GetPrivateProfileString(System.String,System.String,System.String,System.Text.StringBuilder,System.Int32,System.String)">
+            <summary>
+            读取INI文件
+            </summary>
+            <param name="section">节点名称</param>
+            <param name="key">键</param>
+            <param name="def">值</param>
+            <param name="retval">stringbulider对象</param>
+            <param name="size">字节大小</param>
+            <param name="filePath">文件路径</param>
+            <returns></returns>
+            所使用全局变量：golbal_Directory
+        </member>
+        <member name="M:DeviceManagementSystem.Mytools.ContentValue(System.String,System.String)">
+            <summary>
+            自定义读取INI文件中的内容方法
+            </summary>
+            <param name="Section">键</param>
+            <param name="key">值</param>
+            <returns></returns>
+        </member>
+        <member name="M:DeviceManagementSystem.Mytools.CreateEx(System.String,System.String,System.Windows.Forms.SaveFileDialog,System.Data.DataTable,System.Windows.Forms.DataGridView)">
+            <summary>
+            创建excel表格
+            </summary>
+            <param name="title">标题</param>
+            <param name="sheetNames">sheet名</param>
+            
+        </member>
+        <member name="M:DeviceManagementSystem.Mytools.IsPicture(System.String)">
+            <summary>
+            判断文件是否是图片
+            </summary>
+            <param name="sText"></param>
+            <returns></returns> 
+        </member>
+        <member name="M:DeviceManagementSystem.Mytools.StringSplit(System.String,System.Char[])">
+            <summary>
+            通过字符串，分隔符返回string[]数组
+            </summary>
+            <param name="sText"></param>
+            <returns></returns> 
+        </member>
+    </members>
+</doc>

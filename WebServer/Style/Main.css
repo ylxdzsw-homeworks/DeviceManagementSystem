@@ -1,0 +1,341 @@
+/*全局*/
+html,body {
+    padding: 0;
+    margin: 0;
+    width: 100%
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    height: 100%
+}
+
+body {
+    background: url("/Image/Web/mainbackground.png");
+    font-family: Consolas,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #d3d3d3;
+    min-height: 100%;
+    position: absolute
+}
+
+body:before,body:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    content: '';
+    background-repeat: repeat-y
+}
+
+a {
+    color: #bfe394;
+    -webkit-transition:.2s linear;
+    -moz-transition:  .2s linear;
+    -ms-transition: .2s linear;
+    -o-transition: .2s linear;
+    transition: .2s linear
+}
+
+a:focus {
+    outline: thin dotted
+}
+
+a:active,a:hover {
+    outline: 0
+}
+
+a:hover {
+    color: #fff
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+    color: #7acb17;
+    text-shadow: -1px 1px 1px #000;
+    font-family: Consolas,Helvetica,Arial,sans-serif
+}
+
+hr {
+    background: #4c4e55;
+    height: 1px;
+    border: none;
+    margin: 15px 0;
+}
+
+code,kbd,pre,samp {
+    font-family: Consolas ,monospace,serif;
+    font-size: 1em
+}
+
+pre,.box {
+    padding: 15px;
+    margin: 1em -15px;
+    background-color: rgba(13,14,17,0.6);
+    border-bottom: 1px solid #414349;
+    overflow: hidden;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px
+}
+/*表单*/
+.checktip{
+    color: #bfe394;
+}
+/*表格*/
+#table{
+    overflow-x: scroll;
+}
+td {
+    width: 50px;
+}
+/*导航栏*/
+#nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    font-size: 2em;
+    border-bottom: 1px solid #4c4e55;
+    background-color: #2b2c34;
+    transition-duration: 1.5s;
+}
+#nav-bar-logo{
+    float: left;
+    height: 64px;
+    margin-left: 2%;
+}
+ul#nav-item{
+    list-style: none;
+    float: left;
+    margin: 16px 0 0 2%;
+    padding: 0 0 0 0;
+}
+#nav-item li{
+    display: block;
+    margin: 0;
+    padding: 8px 35px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: -1px 1px 0 #000;
+    color: #c3c1c1;
+    border-right: 1px solid #35373d;
+    border-left: 1px solid #4c4e55;
+    float: left;
+}
+#nav-item li:first-child{
+    border-left: 1px solid #35373d;
+}
+#nav-item li:hover{
+    background-color: #3b3c44;
+    /*cursor: pointer;*/
+}
+#nav-item li a{
+    text-decoration: none;
+}
+#nav-item li a:hover{
+    text-shadow: 0 0 8px #bfe394;
+}
+#nav-logo{
+    position: absolute;
+    left: -75px;
+    top: -6px;
+    width: 65px;
+    height: 65px
+}
+#accountsection {
+    float: right !important;
+}
+.headroom--toped{
+    -webkit-transform: translateY(-10%);
+    -ms-transform: translateY(-10%);
+    transform: translateY(-10%);
+    transition: 0s !important;
+}
+.headroom--pinned{
+    -webkit-transform: translateY(-10%);
+    -ms-transform: translateY(-10%);
+    transform: translateY(-10%);
+}
+.headroom--unpinned{
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.blank{
+    height: 73px;
+}
+/*侧边栏*/
+.side-bar {
+    width: 170px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 7%;
+    padding: 0 15px 0 15px;
+    position: relative;
+    background: rgba(33,34,37,0.6);
+    border: 1px solid #414349;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+ul#side-item {
+    padding: 0 0 0 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+    color: #c3c1c1;
+    text-shadow: -1px 1px 0 #111;
+    font-size: 18px;
+}
+#side-item li{
+    margin: 0 0 0 0;
+    padding: 5px 0 5px 0;
+    border-bottom: 1px solid #25272d;
+    border-top: 1px solid #4c4e55;
+}
+#side-item li:first-child{
+    border-top: none;
+}
+#side-item li:last-child{
+    border-bottom: none;
+}
+#side-item span{
+    transition-duration: .2s;
+    transition-timing-function: linear;
+    cursor: pointer;
+    color: #c3c1c1;
+}
+#side-item span:focus {
+    outline: thin dotted
+}
+
+#side-item span:hover {
+    outline: none;
+    color: #fff;
+}
+
+#side-item a {
+    text-decoration: none;
+    color: #c3c1c1;
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    -ms-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    transition: color .2s linear
+}
+
+#side-item a:hover {
+    color: #fff
+}
+
+/*主体*/
+.layout-body {
+    width: 50%;
+    position: relative;
+    margin: auto;
+}
+
+/*页脚*/
+.layout-body:after {
+    content: '';
+    display: block;
+    height: 200px;
+    width: 100%;
+    clear: both;
+}
+
+.layout-footer {
+    clear: both;
+    background: #000;
+    padding: 35px 0;
+    position: absolute;
+    color: #656565;
+    width: 100%;
+    bottom: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#layout-footer-content {
+    margin-left: 35%;
+}
+#layout-footer-content-author {
+    float: left;
+    margin: 0 0 0 0;
+}
+#layout-footer-content-author h1,h2,p{
+    margin: 0 0 0 0;
+    color: #fff;
+    font-family: Consolas,sans-serif;
+    text-align: center;
+}
+#layout-footer-content-author h1{
+    font-size: large;
+}
+#layout-footer-content-author h2{
+    font-size: medium;
+}
+#layout-footer-content-author p{
+    color: #636363;
+    font-size: small;
+}
+#layout-footer-content-author a{
+    text-decoration: none;
+}
+#layout-footer-content-logo {
+    float: left;
+    margin-left: 5%;
+}
+
+.layout-footer:before {
+    position: absolute;
+    top: -9px;
+    background-image: url("/Image/Web/footerbackground.png");
+    height: 9px;
+    width: 100%;
+    content: '';
+    display: block
+}
+
+/*其他*/
+#qr {
+    margin: 5% 0 0 12%;
+}
+.left {
+    margin: 0 0 0 0;
+    text-align: left;
+    color: #c3c1c1;
+    text-shadow: -1px 1px 0 #111;
+}
+#popa {
+    text-decoration: none;
+}
+.buttona {
+    color: #414349;
+    text-decoration: none;
+}
+.buttona:hover {
+    color: #414349;
+    text-shadow: 0 0 6px #33ff02;
+}
+.aitem {
+    margin: 3px 0 0 0;
+}
+/*通用*/
+[hidden] {
+    display: none
+}
+
+.clear {
+    clear: both;    
+}
+
+.em {
+    color: #7acb17;
+}

@@ -1,0 +1,34 @@
+﻿@{
+    Layout = "/Shared/_Layout.cshtml";
+}
+@section head{
+    <title>根据属性查询</title>
+    <script src="/Script/consts.js"></script>
+    <script src="/Script/AjaxCheck.js"></script>
+
+}
+    <h1>根据属性查询</h1>
+    <form action="/Query/results.cshtml" name="querybyattr" method="post">
+        @for(var i = 0 ; i < DBtool.namelist.Length; i++)
+        {
+            if(i != 0 && i != 18 && i !=23 && i<26){
+                string c = "c" + (i+1);
+                string d = "div" + c;
+                string e = "checktip" + c;
+                <div id="@d" class="aitem">
+                    <label for="@c" >@DBtool.getcn(c)</label>
+                    <input class="inputbox" name="@c" id="@c" type="text"></input>
+                    <span class="checktip" id="@e" ></span>
+                </div>
+            }
+        }
+        <input type="submit">
+    </form>
+
+
+
+@section sidebar{
+    <li><span><a href="/Query/querybyid.cshtml">根据ID查询</a></span></li>
+    <li><span><a href="/Query/querybyattr.cshtml">根据属性查询</a></span></li>
+    <li><span><a href="/Query/querybylabel.cshtml">根据标签查询</a></span></li>
+}

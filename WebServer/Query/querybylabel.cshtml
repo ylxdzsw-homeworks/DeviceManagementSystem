@@ -1,0 +1,39 @@
+﻿@{
+    Layout = "/Shared/_Layout.cshtml";
+    var tags = new Dictionary<string,int>();
+    var j = new String[6];
+}
+@section head{
+    <title>根据标签查询</title>
+}
+<h1>根据标签查询</h1>
+@foreach(var i in DBtool.ddb.Query("SELECT * FROM DataInfo"))
+{
+    var k = i["Tag"];
+    if(k != null && k.Trim() != "")
+    {
+        j = i["Tag"].Split(' ');
+        foreach(var jj in j)
+        {
+            var p = 0;
+            try{
+                tags[jj] = tags[jj]+1;
+            }catch(Exception err){
+                tags.Add(jj,1);
+            }
+        }
+    }
+}
+<div class="tag-select">
+    @foreach(var i in tags.Keys)
+    {
+        if(i.Trim() == ""){continue;}
+        <a href="/Query/results.cshtml?tag=@i"><button class="buttona" id="@i">@i</button></a>
+    }
+</div>
+
+@section sidebar{
+    <li><span><a href="/Query/querybyid.cshtml">根据ID查询</a></span></li>
+    <li><span><a href="/Query/querybyattr.cshtml">根据属性查询</a></span></li>
+    <li><span><a href="/Query/querybylabel.cshtml">根据标签查询</a></span></li>
+}

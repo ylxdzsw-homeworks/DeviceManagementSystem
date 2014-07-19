@@ -1,0 +1,17 @@
+﻿@{
+    Layout = "/Shared/_Layout.cshtml";
+}
+@section head{
+    <title>根据ID查询</title>
+}
+<div class="box">
+    <form action="/Query/results.cshtml" method="get">
+        <span>请输入要查询的设备ID:  </span><input type="text" id="Id" name="Id"></input>
+        <input type="submit"></input>
+    </form>
+</div>
+@section sidebar{
+    <li><span><a href="/Query/querybyid.cshtml">根据ID查询</a></span></li>
+    <li><span><a href="/Query/querybyattr.cshtml">根据属性查询</a></span></li>
+    <li><span><a href="/Query/querybylabel.cshtml">根据标签查询</a></span></li>
+}

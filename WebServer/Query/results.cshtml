@@ -1,0 +1,61 @@
+﻿@{
+    Layout = "/Shared/_Layout.cshtml";
+    var a = Request.Params["id"];
+    var tag = Request.Params["Tag"];
+    var querystr = "";
+    if(a != null)
+    {
+        querystr = "SELECT * FROM DeviceInfo LEFT JOIN DeviceStatus ON DeviceInfo.Id = DeviceStatus.Id WHERE DeviceInfo.Id = " + a;
+    }else if(tag != null){
+        querystr = "SELECT * FROM DeviceInfo LEFT JOIN DeviceStatus ON DeviceInfo.Id = DeviceStatus.Id LEFT JOIN DataInfo ON DataInfo.Id = DeviceInfo.Id WHERE DataInfo.Tag LIKE '%"+tag+"%'";
+    }else{
+        querystr = "SELECT * FROM DeviceInfo LEFT JOIN DeviceStatus ON DeviceInfo.Id = DeviceStatus.Id LEFT JOIN DataInfo ON DataInfo.Id = DeviceInfo.Id WHERE 1 = 1 AND ";
+        foreach(var i in DBtool.metanamelist)
+        {
+            var temp = Request.Params[i.num];
+            if(temp != null && temp.Trim() != "")
+            {
+                querystr=querystr + i.en + " = " + temp + " AND ";
+            }
+        }
+        querystr = querystr.Substring(0,querystr.Length - 5);
+    }
+}
+
+@section sidebar{
+    <li><span><a href="/Query/querybyid.cshtml">根据ID查询</a></span></li>
+    <li><span><a href="/Query/querybyattr.cshtml">根据属性查询</a></span></li>
+    <li><span><a href="/Query/querybylabel.cshtml">根据标签查询</a></span></li>
+}
+
+<h1>查询结果</h1>
+<div id="table">
+    <table>
+        <thead>
+            <tr>
+                @foreach(var i in DBtool.namelist){
+                    <th>@i</th>
+                }
+                <th>生成二维码</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{Debug.log("执行了查询语句"+querystr+" (result.cshtml - 9153)");var numid = 0;}
+            @foreach(var i in DBtool.ddb.Query(querystr))
+            {
+                <tr>
+                    @foreach(var j in DBtool.metanamelist)
+                    {
+                        <td>@i[j.en.Split('.')[1]]</td>
+                    }
+                    @{
+                        var temp1 = "qrcode" + numid;
+                        var temp2 = "/Shared/QRimg.cshtml?id="+i["Id"];
+                    }
+                    <td><a href="@temp2"><button class="buttona" id="@temp1">二维码</button></a></td>
+                </tr>
+                numid++;
+            }
+        </tbody>
+    </table>
+</div>

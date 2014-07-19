@@ -1,0 +1,74 @@
+log - Database initialized successfully! (DBtool.cs - 4028) - 2014/7/15 21:27:31
+log - 执行了查询语句SELECT * FROM DeviceInfo LEFT JOIN DeviceStatus ON DeviceInfo.Id = DeviceStatus.Id LEFT JOIN DataInfo ON DataInfo.Id = DeviceInfo.Id WHERE DataInfo.Tag LIKE '%lol%' (result.cshtml - 9153) - 2014/7/15 21:27:57
+log - 执行了查询语句SELECT * FROM DeviceInfo LEFT JOIN DeviceStatus ON DeviceInfo.Id = DeviceStatus.Id LEFT JOIN DataInfo ON DataInfo.Id = DeviceInfo.Id WHERE DataInfo.Tag LIKE '%lol%' (result.cshtml - 9153) - 2014/7/15 21:28:44
+log - 执行了查询语句SELECT * FROM DeviceInfo LEFT JOIN DeviceStatus ON DeviceInfo.Id = DeviceStatus.Id LEFT JOIN DataInfo ON DataInfo.Id = DeviceInfo.Id WHERE 1 = 1 (result.cshtml - 9153) - 2014/7/15 21:29:16
+log - Database initialized successfully! (DBtool.cs - 4028) - 2014/7/15 21:53:16
+log - Database initialized successfully! (DBtool.cs - 4028) - 2014/7/15 22:12:20
+log - insert delete query updata - 2014/7/15 22:13:52
+log -   - 2014/7/15 22:15:16
+log - 执行了查询语句SELECT * FROM DeviceInfo LEFT JOIN DeviceStatus ON DeviceInfo.Id = DeviceStatus.Id LEFT JOIN DataInfo ON DataInfo.Id = DeviceInfo.Id WHERE 1 = 1 (result.cshtml - 9153) - 2014/7/15 22:22:22
+log -   - 2014/7/15 22:22:34
+log -   - 2014/7/15 22:22:39
+log - insert delete query updata - 2014/7/15 22:25:33
+log - 用户qqq登录成功 - 2014/7/15 22:28:00
+log - try to excuse "INSERT INTO DeviceInfo (ClassId, Name, Model, Specification, Price, Producer, ProduceTime, ProduceId, AcquireTime, FundSubject, UseDirection, Broker, AssetsClass, StorageTime, Status, Remark) VALUES ('56710', 'Random42959', 'Random model16867', 'Random specification32241', '1.81057157309054', 'Random producer56471', '2014/7/13 22:29:15', '204731', '2014/7/14 22:29:15', 'Random subject2', 'Random direction5', 'Random broker8', 'Random class3', '2014/7/15 10:29:15', 'Random status1', 'Random remarks52380')" (DBtool.cs - 0175) - 2014/7/15 22:29:15
+log - try to excuse "INSERT INTO Devicestatus (Location, RenderTime, Broker, Department, Remark, Id) VALUES ('Random location15304', '2014/8/26 0:29:15', 'Random broker2', 'Random Department1', 'Random remark12945', '87')" (DBtool.cs - 6012) - 2014/7/15 22:29:15
+log - try to excuse "INSERT INTO DataInfo (Id, InfoChangeTime, InfoChangeOperator, StatusChangeTime, StatusChangeOperator) VALUES ('87', '2014/7/15 22:29:15', 'qqq', '2014/7/15 22:29:15', 'qqq')" (DBtool.cs - 6138) - 2014/7/15 22:29:15
+log - try to excuse "INSERT INTO DeviceInfo (ClassId, Name, Model, Specification, Price, Producer, ProduceTime, ProduceId, AcquireTime, FundSubject, UseDirection, Broker, AssetsClass, StorageTime, Status, Remark) VALUES ('60819', 'Random26357', 'Random model33571', 'Random specification28347', '0.708356047036835', 'Random producer53538', '2014/7/13 22:29:16', '651146', '2014/7/14 22:29:16', 'Random subject7', 'Random direction5', 'Random broker8', 'Random class4', '2014/7/15 10:29:16', 'Random status2', 'Random remarks24751')" (DBtool.cs - 0175) - 2014/7/15 22:29:16
+log - try to excuse "INSERT INTO Devicestatus (Location, RenderTime, Broker, Department, Remark, Id) VALUES ('Random location41220', '2014/7/17 18:29:16', 'Random broker4', 'Random Department7', 'Random remark17299', '88')" (DBtool.cs - 6012) - 2014/7/15 22:29:16
+log - try to excuse "INSERT INTO DataInfo (Id, InfoChangeTime, InfoChangeOperator, StatusChangeTime, StatusChangeOperator) VALUES ('88', '2014/7/15 22:29:16', 'qqq', '2014/7/15 22:29:16', 'qqq')" (DBtool.cs - 6138) - 2014/7/15 22:29:16
+log - try to excuse "INSERT INTO DeviceInfo (ClassId, Name, Model, Specification, Price, Producer, ProduceTime, ProduceId, AcquireTime, FundSubject, UseDirection, Broker, AssetsClass, StorageTime, Status, Remark) VALUES ('52336', 'Random32345', 'Random model60155', 'Random specification55824', '4.42590627763042', 'Random producer22817', '2014/7/13 22:29:17', '530833', '2014/7/14 22:29:17', 'Random subject8', 'Random direction1', 'Random broker2', 'Random class5', '2014/7/15 10:29:17', 'Random status1', 'Random remarks49344')" (DBtool.cs - 0175) - 2014/7/15 22:29:17
+log - try to excuse "INSERT INTO Devicestatus (Location, RenderTime, Broker, Department, Remark, Id) VALUES ('Random location17274', '2014/7/16 11:29:17', 'Random broker1', 'Random Department7', 'Random remark16965', '89')" (DBtool.cs - 6012) - 2014/7/15 22:29:17
+log - try to excuse "INSERT INTO DataInfo (Id, InfoChangeTime, InfoChangeOperator, StatusChangeTime, StatusChangeOperator) VALUES ('89', '2014/7/15 22:29:17', 'qqq', '2014/7/15 22:29:17', 'qqq')" (DBtool.cs - 6138) - 2014/7/15 22:29:17
+log - try to excuse "INSERT INTO DeviceInfo (ClassId, Name, Model, Specification, Price, Producer, ProduceTime, ProduceId, AcquireTime, FundSubject, UseDirection, Broker, AssetsClass, StorageTime, Status, Remark) VALUES ('62625', 'Random17673', 'Random model55789', 'Random specification22465', '1.85688840172638', 'Random producer37858', '2014/7/13 22:29:18', '646768', '2014/7/14 22:29:18', 'Random subject5', 'Random direction7', 'Random broker6', 'Random class4', '2014/7/15 10:29:18', 'Random status1', 'Random remarks54167')" (DBtool.cs - 0175) - 2014/7/15 22:29:18
+log - try to excuse "INSERT INTO Devicestatus (Location, RenderTime, Broker, Department, Remark, Id) VALUES ('Random location10210', '2014/8/23 10:29:18', 'Random broker6', 'Random Department3', 'Random remark26798', '90')" (DBtool.cs - 6012) - 2014/7/15 22:29:18
+log - try to excuse "INSERT INTO DataInfo (Id, InfoChangeTime, InfoChangeOperator, StatusChangeTime, StatusChangeOperator) VALUES ('90', '2014/7/15 22:29:18', 'qqq', '2014/7/15 22:29:18', 'qqq')" (DBtool.cs - 6138) - 2014/7/15 22:29:18
+log - try to excuse "INSERT INTO DeviceInfo (ClassId, Name, Model, Specification, Price, Producer, ProduceTime, ProduceId, AcquireTime, FundSubject, UseDirection, Broker, AssetsClass, StorageTime, Status, Remark) VALUES ('26466', 'Random36251', 'Random model24499', 'Random specification33442', '1.41656126148916', 'Random producer12865', '2014/7/13 22:29:19', '289965', '2014/7/14 22:29:19', 'Random subject3', 'Random direction7', 'Random broker9', 'Random class6', '2014/7/15 10:29:19', 'Random status2', 'Random remarks14349')" (DBtool.cs - 0175) - 2014/7/15 22:29:19
+log - try to excuse "INSERT INTO Devicestatus (Location, RenderTime, Broker, Department, Remark, Id) VALUES ('Random location30937', '2014/8/4 10:29:19', 'Random broker7', 'Random Department5', 'Random remark14081', '91')" (DBtool.cs - 6012) - 2014/7/15 22:29:19
+log - try to excuse "INSERT INTO DataInfo (Id, InfoChangeTime, InfoChangeOperator, StatusChangeTime, StatusChangeOperator) VALUES ('91', '2014/7/15 22:29:19', 'qqq', '2014/7/15 22:29:19', 'qqq')" (DBtool.cs - 6138) - 2014/7/15 22:29:19
+log - Database initialized successfully! (DBtool.cs - 4028) - 2014/7/15 22:44:01
+log - 用户qqq登录成功 - 2014/7/15 22:50:34
+log - 执行了查询语句SELECT * FROM DeviceInfo LEFT JOIN DeviceStatus ON DeviceInfo.Id = DeviceStatus.Id LEFT JOIN DataInfo ON DataInfo.Id = DeviceInfo.Id WHERE DataInfo.Tag LIKE '%NeedReqaire%' (result.cshtml - 9153) - 2014/7/15 22:50:52
+log - 执行了查询语句SELECT * FROM DeviceInfo LEFT JOIN DeviceStatus ON DeviceInfo.Id = DeviceStatus.Id LEFT JOIN DataInfo ON DataInfo.Id = DeviceInfo.Id WHERE DataInfo.Tag LIKE '%Checked%' (result.cshtml - 9153) - 2014/7/15 22:50:55
+log - insert delete query updata - 2014/7/15 22:51:01
+log - 执行了查询语句SELECT * FROM DeviceInfo LEFT JOIN DeviceStatus ON DeviceInfo.Id = DeviceStatus.Id LEFT JOIN DataInfo ON DataInfo.Id = DeviceInfo.Id WHERE DataInfo.Tag LIKE '%NeedReqaire%' (result.cshtml - 9153) - 2014/7/15 22:51:33
+log - 执行了查询语句SELECT * FROM DeviceInfo LEFT JOIN DeviceStatus ON DeviceInfo.Id = DeviceStatus.Id LEFT JOIN DataInfo ON DataInfo.Id = DeviceInfo.Id WHERE DataInfo.Tag LIKE '%Checked%' (result.cshtml - 9153) - 2014/7/15 22:51:49
+log - 执行了查询语句SELECT * FROM DeviceInfo LEFT JOIN DeviceStatus ON DeviceInfo.Id = DeviceStatus.Id LEFT JOIN DataInfo ON DataInfo.Id = DeviceInfo.Id WHERE DataInfo.Tag LIKE '%NeedReqaire%' (result.cshtml - 9153) - 2014/7/15 22:51:51
+log - 执行了查询语句SELECT * FROM DeviceInfo LEFT JOIN DeviceStatus ON DeviceInfo.Id = DeviceStatus.Id LEFT JOIN DataInfo ON DataInfo.Id = DeviceInfo.Id WHERE DataInfo.Tag LIKE '%Checked%' (result.cshtml - 9153) - 2014/7/15 22:51:52
+log - 生成了二维码图片C:\Users\Administrator\Desktop\fuck-project\WebTry\DevicemanagementSystem\Image\QRimgs\QR635410615146742604.jpg (QRtool.cs - 2175) - 2014/7/15 22:51:54
+log - 生成了二维码图片C:\Users\Administrator\Desktop\fuck-project\WebTry\DevicemanagementSystem\Image\QRimgs\QR635410615146802608.jpg (QRtool.cs - 2175) - 2014/7/15 22:51:54
+log - 生成了二维码图片C:\Users\Administrator\Desktop\fuck-project\WebTry\DevicemanagementSystem\Image\QRimgs\QR635410615146832610.jpg (QRtool.cs - 2175) - 2014/7/15 22:51:54
+log - 生成了二维码图片C:\Users\Administrator\Desktop\fuck-project\WebTry\DevicemanagementSystem\Image\QRimgs\QR635410615146882612.jpg (QRtool.cs - 2175) - 2014/7/15 22:51:54
+log - insert delete query updata - 2014/7/15 22:52:03
+log - Database initialized successfully! (DBtool.cs - 4028) - 2014/7/15 23:44:26
+log - 用户qqq登录成功 - 2014/7/15 23:49:25
+log - insert delete query updata - 2014/7/15 23:49:27
+log - 用户small登录成功 - 2014/7/15 23:49:36
+log -   - 2014/7/15 23:50:19
+log - 用户qqq登录成功 - 2014/7/15 23:50:26
+log - 生成了二维码图片C:\Users\Administrator\Desktop\fuck-project\WebTry\DevicemanagementSystem\Image\QRimgs\QR635410657552329565.jpg (QRtool.cs - 2175) - 2014/7/16 0:02:35
+log - 生成了二维码图片C:\Users\Administrator\Desktop\fuck-project\WebTry\DevicemanagementSystem\Image\QRimgs\QR635410657552379568.jpg (QRtool.cs - 2175) - 2014/7/16 0:02:35
+log - 生成了二维码图片C:\Users\Administrator\Desktop\fuck-project\WebTry\DevicemanagementSystem\Image\QRimgs\QR635410657552409569.jpg (QRtool.cs - 2175) - 2014/7/16 0:02:35
+log - 生成了二维码图片C:\Users\Administrator\Desktop\fuck-project\WebTry\DevicemanagementSystem\Image\QRimgs\QR635410657552439571.jpg (QRtool.cs - 2175) - 2014/7/16 0:02:35
+log - 执行了查询语句SELECT * FROM DeviceInfo LEFT JOIN DeviceStatus ON DeviceInfo.Id = DeviceStatus.Id LEFT JOIN DataInfo ON DataInfo.Id = DeviceInfo.Id WHERE DataInfo.Tag LIKE '%Checked%' (result.cshtml - 9153) - 2014/7/16 0:02:49
+log - 生成了二维码图片C:\Users\Administrator\Desktop\fuck-project\WebTry\DevicemanagementSystem\Image\QRimgs\QR635410657731119791.jpg (QRtool.cs - 2175) - 2014/7/16 0:02:53
+log - 生成了二维码图片C:\Users\Administrator\Desktop\fuck-project\WebTry\DevicemanagementSystem\Image\QRimgs\QR635410657731149793.jpg (QRtool.cs - 2175) - 2014/7/16 0:02:53
+log - 生成了二维码图片C:\Users\Administrator\Desktop\fuck-project\WebTry\DevicemanagementSystem\Image\QRimgs\QR635410657731189795.jpg (QRtool.cs - 2175) - 2014/7/16 0:02:53
+log - 生成了二维码图片C:\Users\Administrator\Desktop\fuck-project\WebTry\DevicemanagementSystem\Image\QRimgs\QR635410657731229797.jpg (QRtool.cs - 2175) - 2014/7/16 0:02:53
+log - Database initialized successfully! (DBtool.cs - 4028) - 2014/7/16 7:32:47
+log - Database initialized successfully! (DBtool.cs - 4028) - 2014/7/16 8:19:22
+log - 用户qqq登录成功 - 2014/7/16 8:34:09
+log - try to excuse "INSERT INTO DeviceInfo (ClassId, Name, Model, Specification, Price, Producer, ProduceTime, ProduceId, AcquireTime, FundSubject, UseDirection, Broker, Username, AssetsClass, StorageTime, Status, Remark) VALUES ('123', '123', '', '', '', '', '', '', '', '', '', 'dedq', '', '', '2013.2.3', '', '')" (DBtool.cs - 0175) - 2014/7/16 8:35:01
+log - try to excuse "INSERT INTO Devicestatus (Location, Username, RenderTime, Broker, Department, Remark, Id) VALUES ('21331', '', '', '', '3123', '', '92')" (DBtool.cs - 6012) - 2014/7/16 8:35:01
+log - try to excuse "INSERT INTO DataInfo (Id, InfoChangeTime, InfoChangeOperator, StatusChangeTime, StatusChangeOperator, Tag) VALUES ('92', '2014/7/16 8:35:02', 'qqq', '2014/7/16 8:35:02', 'qqq', ' ')" (DBtool.cs - 6138) - 2014/7/16 8:35:02
+log - 生成了二维码图片C:\Users\Administrator\Desktop\fuck-project\WebTry\DevicemanagementSystem\Image\QRimgs\QR635410965064479216.jpg (QRtool.cs - 2175) - 2014/7/16 8:35:06
+log - 生成了二维码图片C:\Users\Administrator\Desktop\fuck-project\WebTry\DevicemanagementSystem\Image\QRimgs\QR635410965064519218.jpg (QRtool.cs - 2175) - 2014/7/16 8:35:06
+log - 生成了二维码图片C:\Users\Administrator\Desktop\fuck-project\WebTry\DevicemanagementSystem\Image\QRimgs\QR635410965064559221.jpg (QRtool.cs - 2175) - 2014/7/16 8:35:06
+log - 生成了二维码图片C:\Users\Administrator\Desktop\fuck-project\WebTry\DevicemanagementSystem\Image\QRimgs\QR635410965064589222.jpg (QRtool.cs - 2175) - 2014/7/16 8:35:06
+log - 执行了查询语句SELECT * FROM DeviceInfo LEFT JOIN DeviceStatus ON DeviceInfo.Id = DeviceStatus.Id WHERE DeviceInfo.Id = 88 (result.cshtml - 9153) - 2014/7/16 8:35:51
+log - 执行了查询语句SELECT * FROM DeviceInfo LEFT JOIN DeviceStatus ON DeviceInfo.Id = DeviceStatus.Id LEFT JOIN DataInfo ON DataInfo.Id = DeviceInfo.Id WHERE DataInfo.Tag LIKE '%Checked%' (result.cshtml - 9153) - 2014/7/16 8:36:08
+log - 生成了二维码图片C:\Users\Administrator\Desktop\fuck-project\WebTry\DevicemanagementSystem\Image\QRimgs\QR635410965963670647.jpg (QRtool.cs - 2175) - 2014/7/16 8:36:36
+log - 生成了二维码图片C:\Users\Administrator\Desktop\fuck-project\WebTry\DevicemanagementSystem\Image\QRimgs\QR635410965963700648.jpg (QRtool.cs - 2175) - 2014/7/16 8:36:36
+log - 生成了二维码图片C:\Users\Administrator\Desktop\fuck-project\WebTry\DevicemanagementSystem\Image\QRimgs\QR635410965963760652.jpg (QRtool.cs - 2175) - 2014/7/16 8:36:36
+log - 生成了二维码图片C:\Users\Administrator\Desktop\fuck-project\WebTry\DevicemanagementSystem\Image\QRimgs\QR635410965963800654.jpg (QRtool.cs - 2175) - 2014/7/16 8:36:36
+log - insert delete query updata - 2014/7/16 8:39:11

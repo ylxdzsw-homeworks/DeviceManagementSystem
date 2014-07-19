@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "~/Shared/_Layout.cshtml";
+    var a = Request["Id"];
+    if(a == null)
+    {
+        <form name="qr" method="get">
+            <span>请输入要编码的id </span>
+            <input type="text" name="id"></input>
+            <input type="submit">
+        </form>
+    }
+    else
+    {
+        <h1>右键“图片另存为”可以下载二维码图片以便打印并贴在设备上</h1>
+        var b = QRtool.makeQRimg("http://localhost:63294/results.cshtml?id=" + a);
+        <div>
+            <img id="qr" src="@b" alt="二维码图片" width="200" height="200"></img>
+            <p class="left">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp查询记录</p>
+        </div>
+        var c = QRtool.makeQRimg("http://localhost:63294/QRHandler.cshtml?id=" + a + "&action=addTag&value=Checked");
+        <div>
+            <img id="qr" src="@c" alt="二维码图片" width="200" height="200"></img>
+            <p class="left">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp标记为运转正常</p>
+        </div>
+        var d = QRtool.makeQRimg("http://localhost:63294/QRHandler.cshtml?id=" + a + "&action=addTag&value=NeedRepair");
+        <div>
+            <img id="qr" src="@d" alt="二维码图片" width="200" height="200"></img>
+            <p class="left">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp标记为需要检修</p>
+        </div>
+        var e = QRtool.makeQRimg("http://localhost:63294/QRHandler.cshtml?id=" + a + "&action=addTag&value=NeverUsed");
+        <div>
+            <img id="qr" src="@d" alt="二维码图片" width="200" height="200"></img>
+            <p class="left">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp标记为未被使用</p>
+        </div>
+    }
+}
+@section sidebar{
+    <li><span><a href="/Manage/Index.cshtml">Index</a></span></li>
+    <li><span><a href="/Manage/Insert.cshtml">Insert</a></span></li>
+}

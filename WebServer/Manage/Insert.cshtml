@@ -1,0 +1,68 @@
+﻿@{
+    Layout = "~/Shared/_Layout.cshtml";
+}
+@section sidebar{
+    <li><span><a href="/Manage/Insert.cshtml">Insert</a></span></li>
+    <li><span><a href="/Manage/delete.cshtml">Delete</a></span></li>
+    <li><span><a href="/Manage/tagManage.cshtml">tagManage</a></span></li>
+}
+@{
+    var Auth = Session["accountAuth"];
+    if(Auth == null)
+    {
+        <h1>请先登录</h1>
+        return;
+    }
+    if(!Auth.ToString().Contains("insert"))
+    {
+        <h1>没有权限</h1>
+        return;
+    }
+}
+
+@section head{
+    <script src="/Script/consts.js"></script>
+    <script src="/Script/AjaxCheck.js"></script>
+    <script src="/Script/RandomInsert.js"></script>
+}
+<button id="debug-randominsert" type="button" hidden>添加随机数据</button>
+@{
+    if(IsPost)
+    {
+        Recordrow rr = new Recordrow();
+        foreach(var i in DBtool.metanamelist)
+        {
+            if(Request[i.num] != null)
+            {
+                rr.add(i.num,Request[i.num]);
+            }
+        }
+        var poptip = "添加失败";
+        var ahref = "";
+        var ainner = "";
+        if(DBtool.insert(rr,Session["accountname"].ToString())){
+            var sucessid = DBtool.lastid;
+            poptip="成功添加数据 ";
+            ahref = "/Shared/QRimg.cshtml?id=" + sucessid;
+            ainner = " 查看二维码";
+        }
+            <h1 id="alert">@poptip<a id="popa" href="@ahref">@ainner</a></h1>
+    }
+    <h1>添加一条数据</h1>
+    <form name="insert" method="post">
+        @for(var i = 0 ; i < DBtool.namelist.Length; i++)
+        {
+            if(i != 0 && i != 18 && i !=23 && i<26){
+                string c = "c" + (i+1);
+                string d = "div" + c;
+                string e = "checktip" + c;
+                <div id="@d" class="aitem">
+                    <label for="@c" >@DBtool.getcn(c)</label>
+                    <input class="inputbox" name="@c" id="@c" type="text"></input>
+                    <span class="checktip" id="@e" ></span>
+                </div>
+            }
+        }
+        <input type="submit">
+    </form>
+}

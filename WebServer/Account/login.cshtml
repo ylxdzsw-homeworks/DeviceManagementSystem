@@ -1,0 +1,48 @@
+﻿@{
+    Layout = "~/Shared/_Layout.cshtml";
+    var needtologin = true;
+}
+@{
+    if(IsPost)
+    {
+        var accountname = Request.Params["account"].Trim();
+        var accountpassword = Request.Params["password"].Trim();
+        var databasepassword = DBtool.queryPassword(accountname);
+        if(databasepassword != null)
+        {
+            if(databasepassword == accountpassword)
+            {
+                Session["accountname"] = accountname;
+                Session["accountAuth"] = DBtool.queryAuth(accountname);
+                <h1>登录成功 @accountname</h1>
+                Debug.log("用户"+accountname+"登录成功");
+                needtologin = false;
+            }else{
+                <h1>密码错误，请重新登录</h1>
+            }
+        }else{
+            <h1>不存在该用户，请联系系统管理员</h1>
+        }
+    }
+    if(needtologin){
+        <h1>登录</h1>
+        <form name="login" method="post">
+            <div id="accountdiv">
+                <label for="account">用户名</label>
+                <input type="text" name="account" id="account" >
+            </div>
+            <div id="passworddiv">
+                <label for="password">密码</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <input type="submit">
+        </form>
+    }
+}
+
+@section sidebar{
+    <li><span><a href="/Index">Index</a></span></li>
+    <li><span><a href="/Query/Query.cshtml">Query</a></span></li>
+    <li><span><a href="/Manage/Insert.cshtml">Insert</a></span></li>
+    <li><span><a href="/Shared/QRimg.cshtml">Generate QRcode</a></span></li>
+}

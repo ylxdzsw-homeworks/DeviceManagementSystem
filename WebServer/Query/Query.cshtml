@@ -1,0 +1,14 @@
+﻿@{
+    Layout = "~/Shared/_Layout.cshtml";
+}
+@section sidebar{
+    <li><span><a href="/Query/querybyid.cshtml">根据ID查询</a></span></li>
+    <li><span><a href="/Query/querybyattr.cshtml">根据属性查询</a></span></li>
+    <li><span><a href="/Query/querybylabel.cshtml">根据标签查询</a></span></li>
+}
+
+<div class="mode-select">
+    <a href="/Query/querybyid.cshtml"><button class="buttona" id="mode-querybyid">根据ID查询</button></a>
+    <a href="/Query/querybyattr.cshtml"><button class="buttona" id="mode-querybyattr">根据属性查询</button></a>
+    <a href="/Query/querybylabel.cshtml"><button class="buttona" id="mode-querybulabel">根据标签查询</button></a>
+</div>

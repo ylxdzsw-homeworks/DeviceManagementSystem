@@ -1,0 +1,15 @@
+﻿@{
+    Layout="~/Shared/_Layout.cshtml";
+    if(Session["accountAuth"] == null){Response.Redirect("/Index.cshtml");}
+    var a = Session["accountAuth"].ToString();
+    Debug.log(a);
+}
+<div class="box">
+    <p>您的拥有的权限有<span class="em">@a</span></p>
+    <a href="/Account/Exit.cshtml" class="Exit"><button class="buttona" style="float:right">退出</button></a>
+</div>
+
+@section sidebar{
+    <li><span><a href="/Index">Index</a></span></li>
+    <li><span><a href="/Account/Exit.cshtml" class="Exit">Exit</a></span></li>
+}

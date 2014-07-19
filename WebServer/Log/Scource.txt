@@ -1,0 +1,19 @@
+Image/Web/mainbackground.png
+    修改自http://v3.bootcss.com/的背景图
+
+Image/Web/footerback.png
+    http://emmet.io/
+
+Style/Layout.css
+    参考了http://emmet.io/
+
+Script/jquery.min.js
+    http://jquery.com/
+
+Script/headroom.min.js
+    https://github.com/WickyNilliams/headroom.js
+    *现在已没有使用了
+
+Script/Fadeinout.js
+    http://www.nowamagic.net/javascript/js_FadeInAndOut.php
+    *现在已没有使用了

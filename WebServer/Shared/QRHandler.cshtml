@@ -1,0 +1,11 @@
+﻿@{
+    Layout = "/Shared/_Layout.cshtml";
+    if(Request.Params["Action"] == null)
+    {
+        Response.Redirect("/Index.cshtml");
+    }
+    if(Request.Params["Action"] == "addTag")
+    {
+        <h1>标签添加成功！</h1>
+    }
+}

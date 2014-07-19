@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/Style/Main.css" />
+        <script src="~/Script/jquery.min.js"></script>
+        <script type="text/javascript" src="/Script/Layout.js"></script>
+
+        @RenderSection("head",false);
+    </head>
+    <body>
+        
+        <section class="layout-header">
+            <div id="nav-bar" class="headroom--toped">
+                <nav>
+                    <img id="nav-bar-logo" src="/Image/Web/Logo.png" alt="logo" />
+                    <ul id="nav-item">
+                        <li><a href = "/Index.cshtml">Index</a></li>
+                        <li><a href = "/Query/Query.cshtml">Query</a></li>
+                        <li><a href = "/Manage/Insert.cshtml">Manage</a></li>
+                        <li id="accountsection">
+                            @if(Session["accountname"] != null)
+                            {
+                                <p><a href = "/Account/profile.cshtml">@Session["accountname"]</a></p>
+                            }else{
+                                <p><a href="/Account/login">Login</a></p>
+                            }
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="blank"></div>
+        </section>
+
+        <section class="side-bar">
+            <ul id="side-item">
+                @RenderSection("sidebar",true)
+            </ul>
+        </section>
+
+        <section class="layout-body">
+            @RenderBody()
+        </section>
+
+
+        <section class="layout-footer">
+            <div id="layout-footer-content">
+                <div id="layout-footer-content-author">
+                    <h1>设备管理系统网页版</h1>
+                    <p>基于二维码的设备管理系统</p>
+                    <hr />
+                    <h2>项目组成员:张实唯,张瑞鹏,王中毅</h2>
+                    <p>联系电话:13029700983</p>
+                    <p>email<a href="ylxdzsw@gmail.com">ylxdzsw@gmail.com</a></p>
+                </div>
+                <div id="layout-footer-content-logo">
+                    <h1>logo</h1>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>

@@ -1,0 +1,50 @@
+﻿@{
+    Layout = "~/Shared/_Layout.cshtml";
+}
+@{
+    var type = Request.Params["type"];
+    var id = Request.Params["id"];
+    var tag = Request.Params["tag"];
+    if(type == null || id == null || tag == null)
+    {
+        <div style="margin-left: 25%">
+            <h2>添加标签</h2>
+            <form style="margin-top: 10px">
+                <input type="text" name="type" value="add" hidden>
+                <label for="id">id:</label>
+                <input type="text" name="id">
+                <br>
+                <label for="tag">tag:</label>
+                <input type="text" name="tag">
+                <input type="submit">
+            </form>
+        </div>
+        <div style="margin-left: 25%;margin-top: 10px">
+            <h2>删除标签</h2>
+            <form style="margin-top: 10px">
+                <input type="text" name="type" value="remove" hidden>
+                <label for="id">id:</label>
+                <input type="text" name="id">
+                <br>
+                <label for="tag">tag:</label>
+                <input type="text" name="tag">
+                <input type="submit">
+            </form>
+        </div>
+    }else{
+        if(type == "add")
+        {
+            var t = DBtool.addTag(id,tag);
+            <h1>@t</h1>
+        }else if(type == "remove"){
+            var t = DBtool.removeTag(id,tag);
+            <h1>@t</h1>
+        }
+    }
+}
+
+@section sidebar{
+    <li><span><a href="/Manage/Insert.cshtml">Insert</a></span></li>
+    <li><span><a href="/Manage/delete.cshtml">Delete</a></span></li>
+    <li><span><a href="/Manage/tagManage.cshtml">tagManage</a></span></li>
+}

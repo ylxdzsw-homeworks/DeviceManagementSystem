@@ -1,0 +1,35 @@
+﻿@{
+    Layout = "/Shared/_Layout.cshtml";
+}
+@section head{
+    <title>删除</title>
+    <script>$(function(){$("#areyousure").click(function(){alert("确定要删除这条记录吗")})})</script>
+}
+@section sidebar{
+    <li><span><a href="/Manage/Insert.cshtml">Insert</a></span></li>
+    <li><span><a href="/Manage/delete.cshtml">Delete</a></span></li>
+    <li><span><a href="/Manage/tagManage.cshtml">tagManage</a></span></li>
+}
+
+@{
+    var Auth = Session["accountAuth"];
+    if(Auth == null)
+    {
+        <h1>请先登录</h1>
+        return;
+    }
+    if(!Auth.ToString().Contains("delete"))
+    {
+        <h1>没有权限</h1>
+        return;
+    }
+}
+
+
+<div class="box">
+    <form method="get">
+        <span>请输入要删除的设备ID:  </span><input type="text" id="Id" name="Id"></input>
+        <input type="submit" id="areyousure"></input>
+    </form>
+</div>
+
